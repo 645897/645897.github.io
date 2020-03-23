@@ -1,0 +1,71 @@
+	<style>
+	
+		h1, p {
+			font-family: 'Acme', sans-serif;
+		} 
+			
+		p {
+			text-align : center;			
+			font-size: 30px;
+			display: block;			
+		}
+			
+		h1 {
+			text-align : center;			
+			font-size: 80px;
+			color: rgb(255, 199, 250);
+		}
+		
+		img {
+			display:block;
+			margin: auto;
+		}
+		
+		.special {
+			color: #CF8299;
+			text-align : center;		
+		}
+		
+		
+		#one-liner {
+			font-size: 45px;
+			color: #CF8299;
+			border: 5px solid white;
+			text-align : center;
+			margin: 20px;
+		}
+		
+		#prototype {			
+			color:#89CDD3;
+			font-size: 35px;			
+			text-align: right;
+		}
+		
+		
+		.paragraph {
+			text-align : left;
+			font-size: 25px;
+			border-left: 5px solid white;
+			margin: 50px;
+			padding: 5px;			
+		}
+		
+		
+		#features img {
+			width: 50%;
+			height: auto;
+		}
+
+		#mockup {
+
+			float: right;
+		}
+
+		#table {
+			align: left;
+		}
+
+
+
+
+	</style>
