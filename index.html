@@ -5,6 +5,17 @@
 		<link href="styles(EPlanner).css" rel="stylesheet"/>		
 		<link rel="shortcut icon" type="image" href="https://imgur.com/STX22i6.png"/>
 		<title>EPlanner</title>	
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166347359-1"></script>
+		<script>
+ 		 window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'UA-166347359-1');
+</script>
+
 	</head>
 		
 	<body style="background-color:#FCE7F2;">
@@ -18,7 +29,7 @@
 			<th>  <img id="table" src="https://imgur.com/NZLNvjC.png" width="280" height="540"border="1px"> </th>
         </tr>
         	<a href="https://www.figma.com/proto/bJMcteMejpc0E6bF0GLo5r/Event-Planner?node-id=6%3A0&scaling=scale-down" target= "_blank"/>
-			<p id="prototype">Try it here!</p>			
+			<p id="prototype" onclick="onButtonFigma()">Try it here!</p>			
 		</a>
 
 		<h1 class ="special"> Description</h1>
@@ -26,7 +37,7 @@
 		<p class ="paragraph">It's an app, where you can plan your events fast and easy. You'll need to answer some questions and then the app will calculate you the best options for your events.</p>
  	
 		<a href="https://docs.google.com/document/d/1IUQWkx1mulSSXBwOjrRcir-fo5gbeVTfLvU5-5-XsKA/edit#heading=h.l97dawu1egdk" target= "_blank"/>
-			<p id="prototype">Click here for more details</p>
+			<p id="prototype"onclick= "onButtonMore()">Click here for more details</p>
 		</a>
 
 		<table id="features">
@@ -42,7 +53,21 @@
 			</tr>	
 		
 		</table>
+		<scrip>
+			function onButtonSubscribe(){
 
+				gtag("event, "Subscribe");
+			}
+			function onButtonMore(){
+
+				gtag("event, "Subscribe");
+			}
+			function onButtonFigma(){
+
+				gtag("event, "Subscribe");
+			}
+
+		</scrip>
 	
 	<!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -66,7 +91,7 @@
 		<div class="response" id="mce-success-response" style="display:none"></div>
 	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -3000px;" aria-hidden="true"><input type="text" name="b_ec8551b977364417ef7d7cce9_7e20df3d18" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" onclick="onButtonSubscribe()"class="button"></div>
     </div>
 </form>
 </div>
