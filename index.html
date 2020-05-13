@@ -57,16 +57,20 @@
 		<script>
 			function onButtonSubscribe(){
 
-				gtag("event, "Subscribe");
-			}
+				gtag(“event”, “Subscribe”, {
+   				“event_category”: “Landing”
+ 			});
 			function onButtonMore(){
 
-				gtag("event, "More");
-			}
+				gtag(“event”, “More”, {
+   				“event_category”: “Landing”
+ 			});
+		
 			function onButtonFigma(){
 
-				gtag("event, "Figma");
-			}
+				gtag(“event”, “Figma”, {
+   				“event_category”: “Landing”
+ 			});
 
 		</script>
 	
