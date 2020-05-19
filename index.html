@@ -5,7 +5,7 @@
 		<link href="styles(EPlanner).css" rel="stylesheet"/>		
 		<link rel="shortcut icon" type="image" href="https://imgur.com/STX22i6.png"/>
 		<title>EPlanner</title>	
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166347359-1"></script>
 		<script>
@@ -81,6 +81,14 @@
 	#mc_embed_signup{background:#FCE7F2; clear:left; font:20px 'Acme', sans-serif; }
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+	
+	<script>
+	   	$("#mc-embedded-subscribe-form").on("Subscribe", function() {
+  		$("#mc_embed_signup").hide();
+   		$("#Thank you for subscribing!").show();
+		})
+	</style>
+
 </style>
 <div id="mc_embed_signup">
 <form action="https://gmail.us18.list-manage.com/subscribe/post?u=ec8551b977364417ef7d7cce9&amp;id=7e20df3d18" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
